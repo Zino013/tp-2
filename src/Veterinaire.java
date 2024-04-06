@@ -6,11 +6,14 @@ public class Veterinaire {
         this.nom = nom;
         this.specialite = specialite;
     }
+
+    public String getNom() {return this.nom;}
+
+    public Classe getSpecialite() {return this.specialite;}
+
     public void soignerAnimal(Animal animal){
     animal.calculerBesoinAlimentaire();
     }
 
-    public String toString(){
-        return "";
-    }
+    public String toString(){return "[" + getNom() + ", " + getSpecialite() + "]" ;}
 }

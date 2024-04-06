@@ -6,7 +6,7 @@ public class Gardien {
     public Gardien(String nom, int competence){
         this.nom = nom;
         this.competence = competence;
-        id++;
+        this.id++;
     }
     public void entrainerAnimal(Animal animal, double temps) {
 
@@ -17,6 +17,22 @@ public class Gardien {
         } else if (temps > 30) {
             animal.setPoids(5);
         }
+    }
+
+    public int getCompetence() {
+        return this.competence;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public String getNom() {
+        return this.nom;
+    }
+
+    public String toString(){
+        return "[" + getNom() + ", (" + getId() + "), " + getCompetence() + "]";
     }
 
 }

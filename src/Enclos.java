@@ -13,8 +13,12 @@ public class Enclos{
         this.gardien = gardien;
     }
 
+    public int getCapaciteMax() {
+        return this.capaciteMax;
+    }
+
     public Gardien getGardien() {
-        return gardien;
+        return this.gardien;
     }
 
     public Veterinaire getVeterinaire() {
@@ -22,12 +26,8 @@ public class Enclos{
     }
 
     public void ajouterAnimaux(Animal[] lesAnimaux) {
-        Animal[] lesanimeaux2 = new Animal[lesAnimaux.length];
-        for (int i = 0; i < lesAnimaux.length; i++) {
-            lesAnimaux[i] = lesanimeaux2[i];
-            nombreAnimaux++;
-        }
-        this.animaux = lesanimeaux2;
+        this.animaux = lesAnimaux;
+        this.nombreAnimaux = lesAnimaux.length;
     }
 
     public int getNombreAnimaux() {
@@ -38,9 +38,17 @@ public class Enclos{
         return animaux;
     }
 
-
+    public String getNom() {
+        return nom;
+    }
 
     public String toString(){
-        return "";
+        String resultat = "L'enclos " + getNom() + "est peuplé avec " + getNombreAnimaux() + " animaux. Sa capacité est de " + getCapaciteMax();
+        resultat += " animaux. Le vétérinaire assigné est " + getVeterinaire().toString() + ". Le gardien actuel est " + getGardien().toString() + ".\n" ;
+
+        for (int i = 0; i < getAnimaux().length; i++) {
+            resultat += getAnimaux()[i].toString() + "\n";
     }
+        return resultat;
+        }
 }

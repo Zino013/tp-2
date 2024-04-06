@@ -15,11 +15,17 @@ public class Animal {
         calculerBesoinAlimentaire();
     }
 
+    public Classe getClasse() {
+        return this.classe;
+    }
+
+    public String getNom() { return this.nom; }
+
     public String getEspece(){
-        return espece;
+        return this.espece;
     }
     public double getPoids(){
-        return poids;
+        return this.poids;
     }
 
     public void setPoids(int pourcentage) {
@@ -63,7 +69,7 @@ public class Animal {
     }
 
     public String toString(){
-        return "";
+        return "Le " + getEspece() + " nommé " + getNom() + " pèse " + getPoids() + " kg et son besoin alimentaire " + getClasse() + " de " + getBesoinAlimentaire() + " kg" ;
     }
 
 
