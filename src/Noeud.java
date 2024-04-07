@@ -5,6 +5,17 @@ public class Noeud {
     public Noeud getSuivant() {
         return this.suivant;
     }
+    public Noeud(Visiteur visiteur){
+        this.visiteur =visiteur;
+    }
+
+    public void setValeur(Visiteur valeur) {
+        this.valeur = valeur;
+    }
+
+    public void setSuivant(Noeud suivant) {
+        this.suivant = suivant;
+    }
 
     public Visiteur getValeur() {
         return this.valeur;
