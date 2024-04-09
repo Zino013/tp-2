@@ -31,13 +31,13 @@ public class Animal {
     public void setPoids(int pourcentage) {
         switch (pourcentage) {
             case 1:
-                poids = poids * 0.1;
+                poids += poids * 0.01;
                 break;
             case 2:
-                poids = poids / 0.2;
+                poids -= poids * 0.02;
                 break;
             case 5:
-                poids = poids / 0.5;
+                poids -= poids * 0.05;
                 break;
             default:
                 System.out.println("Pourcentage non valide");
