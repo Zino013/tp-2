@@ -23,19 +23,50 @@ public class Visiteur {
     }
 
     public void entrerDansZoo(Zoo zoo){
-        System.out.println("[ " + getNom()+ " "  + getAge() + "  ] entre dans le zoo " + zoo);
+        System.out.println("[ " + getNom()+ " "  + getAge() + "  ] entre dans le zoo " + zoo.getNom());
     }
 
-    public void entrerDansEnclo(Enclos enclos){
-        System.out.println("[ " + getNom()+ " "  + getAge() + "  ] entre dans l'enclos " + enclos.getNom());
+    public void entrerDansEnclo(Enclos enclos) {
+        boolean entreeValide = false;
 
+
+        for (int i = 0; i < enclos.getAnimaux().length; i++) {
+            for (int j = 0; j < especes.length; j++) {
+                if (especes[j].equals(enclos.getAnimaux()[i].getEspece())) {
+                    System.out.println("[ " + getNom() + " " + getAge() + "  ] entre dans l'enclos " + enclos.getNom());
+                    entreeValide = true;
+                    break;
+                }
+            }
+            if (entreeValide) {
+                break;
+            }
+        }
+
+        if (!entreeValide) {
+            System.out.println(enclos.getNom());
+        }
     }
 
-    public void quitterZoo(Zoo zoo){
-        System.out.println("[ " + getNom()+ " "  + getAge() + "  ] quitte le zoo " + zoo);
+
+    public void quitterZoo(){
+        System.out.println("[ " + getNom()+ " "  + getAge() + "  ] quitte le zoo ");
     }
 
     public void quitterEnclo(Enclos enclos){
-        System.out.println("[ " + getNom()+ " "  + getAge() + "  ] quitte l'enclos " + enclos.getNom());
+        boolean  entreeValide= false;
+        for (int i = 0; i < enclos.getAnimaux().length; i++) {
+            for (int j = 0; j < especes.length; j++) {
+                if (especes[j].equals(enclos.getAnimaux()[i].getEspece())) {
+                    System.out.println("[ " + getNom() + " " + getAge() + "  ]  quitte l'enclos  " + enclos.getNom());
+                    entreeValide = true;
+                    break;
+                }
+            }
+            if (entreeValide) {
+                break;
+            }
+        }
+
     }
 }

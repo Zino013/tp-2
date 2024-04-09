@@ -6,12 +6,16 @@ public class Enclos{
     private Veterinaire veterinaire;
     private Gardien gardien;
 
+
     public Enclos(String nom, int capaciteMax,Veterinaire veterinaire, Gardien gardien){
         this.nom = nom;
         this.capaciteMax = capaciteMax;
         this.veterinaire = veterinaire;
         this.gardien = gardien;
+
     }
+
+
 
     public int getCapaciteMax() {
         return this.capaciteMax;
@@ -19,6 +23,10 @@ public class Enclos{
 
     public Gardien getGardien() {
         return this.gardien;
+    }
+
+    public void setGardien(Gardien gardien) {
+        this.gardien = gardien;
     }
 
     public Veterinaire getVeterinaire() {

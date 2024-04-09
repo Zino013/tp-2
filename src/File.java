@@ -28,7 +28,7 @@ public class File {
         Noeud courant = premier;
         String resultat = nbElements + " visiteur: [";
         while (courant != null) {
-            resultat += courant.getValeur() + "] -> [";
+            resultat += courant.getValeur().getNom() + ", " + courant.getValeur().getAge() + "] -> [";
             courant = courant.getSuivant();
         }
         return resultat += "]";

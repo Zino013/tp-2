@@ -6,7 +6,7 @@ public class Noeud {
         return this.suivant;
     }
     public Noeud(Visiteur visiteur){
-        this.visiteur =visiteur;
+        this.valeur = visiteur;
     }
 
     public void setValeur(Visiteur valeur) {

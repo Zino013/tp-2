@@ -2,12 +2,16 @@ public class Gardien {
     private String nom;
     private int competence;
     private int id = 999;
+    private int dernierId = 999;
 
     public Gardien(String nom, int competence){
         this.nom = nom;
         this.competence = competence;
-        this.id++;
+        id = ++dernierId  ;
     }
+
+
+
     public void entrainerAnimal(Animal animal, double temps) {
 
         if (temps < 10) {
@@ -18,6 +22,7 @@ public class Gardien {
             animal.setPoids(5);
         }
     }
+
 
     public int getCompetence() {
         return this.competence;
