@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21fea114-f113-4dc2-bf6d-252938c677e7" name="Changes" comment="troisieme commits">
+    <list default="true" id="21fea114-f113-4dc2-bf6d-252938c677e7" name="Changes" comment="quatrieme commits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Enclos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enclos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gardien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gardien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Noeud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Noeud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Visiteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visiteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712504800740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="quatrieme commits">
+      <option name="closed" value="true" />
+      <created>1712671437148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712671437148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +126,7 @@
     <MESSAGE value="premier commit" />
     <MESSAGE value="Deuxieme commit" />
     <MESSAGE value="troisieme commits" />
-    <option name="LAST_COMMIT_MESSAGE" value="troisieme commits" />
+    <MESSAGE value="quatrieme commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="quatrieme commits" />
   </component>
 </project>

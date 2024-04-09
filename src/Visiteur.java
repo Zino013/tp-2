@@ -43,9 +43,6 @@ public class Visiteur {
             }
         }
 
-        if (!entreeValide) {
-            System.out.println(enclos.getNom());
-        }
     }
 
 
