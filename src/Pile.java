@@ -13,11 +13,11 @@ public class Pile {
     }
 
     public Gardien[] aggrandissement(Gardien[] lesGardiens) {
-        Gardien[] nouveau = new Gardien[lesGardiens.length + RATIO_AGRANDISEMENT]; // Redimensionne le tableau avec la nouvelle taille
+        Gardien[] nouveau = new Gardien[lesGardiens.length + RATIO_AGRANDISEMENT];
         for (int i = 0; i < lesGardiens.length; i++) {
-            nouveau[i] = lesGardiens[i]; // Copie les éléments de l'ancien tableau vers le nouveau
+            nouveau[i] = lesGardiens[i];
         }
-        this.gardiens = nouveau; // Met à jour la référence du tableau des gardiens avec le nouveau tableau
+        this.gardiens = nouveau;
         return nouveau;
     }
 
