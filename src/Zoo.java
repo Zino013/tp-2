@@ -178,6 +178,10 @@ public class Zoo {
         return resultat;
     }
 
+    public Pile getPileGardiens() {
+        return pileGardiens;
+    }
+
     public File getFileVisiteurs() {
         return this.fileVisiteurs;
     }

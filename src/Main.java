@@ -1,4 +1,5 @@
 // Classe principale représentant la gestion du zoo
+// Par Abdoul Awal Boussim et Ghilas Amarouche
 public class Main {
     public static void main(String[] args) {
         // Création de vétérinaires

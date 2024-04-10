@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21fea114-f113-4dc2-bf6d-252938c677e7" name="Changes" comment="">
+    <list default="true" id="21fea114-f113-4dc2-bf6d-252938c677e7" name="Changes" comment="7">
+      <change afterPath="$PROJECT_DIR$/test/TesterFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/TesterPile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TP2_ZOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TP2_ZOO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Enclos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Enclos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gardien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gardien.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Veterinaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Veterinaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Visiteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Visiteur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Zoo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Zoo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +44,8 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TesterFile.executor": "Run",
+    "JUnit.TesterPile.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -62,9 +66,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TesterFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TP2_ZOO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TesterFile" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TesterFile" />
       </list>
     </recent_temporary>
   </component>
@@ -132,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712702932613</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7">
+      <option name="closed" value="true" />
+      <created>1712715066659</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712715066659</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +175,7 @@
     <MESSAGE value="quatrieme commits" />
     <MESSAGE value="cinquieme commits" />
     <MESSAGE value="6" />
-    <option name="LAST_COMMIT_MESSAGE" value="6" />
+    <MESSAGE value="7" />
+    <option name="LAST_COMMIT_MESSAGE" value="7" />
   </component>
 </project>

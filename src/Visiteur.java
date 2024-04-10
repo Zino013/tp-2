@@ -66,4 +66,8 @@ public class Visiteur {
         }
 
     }
+    public String toString() {
+        return "[" + this.nom + ", " + this.age + "]";
+    }
+
 }
