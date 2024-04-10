@@ -104,16 +104,28 @@ public class Zoo {
         }
     }
 
-    public Gardien retirerGardien(){
-        int index = pileGardiens.getNbElements() -1;
+    public Gardien retirerGardien() {
+        int index = pileGardiens.getNbElements() - 1;
         int compteur = 0;
-        for (int i = 0; i < pileGardiens.getGardiens().length -1; i++){
-            if(pileGardiens.getGardiens()[i]!= null) {
+        String nom = "";
+
+        // Trouver le nom du dernier gardien non-null
+        for (int i = pileGardiens.getGardiens().length - 1; i >= 0; i--) {
+            if (pileGardiens.getGardiens()[i] != null) {
+                nom = pileGardiens.getGardiens()[i].getNom();
+                break; // Sortir de la boucle une fois que le nom est trouvé
+            }
+        }
+
+        // Calculer le compteur en excluant le dernier gardien ajouté
+        for (int i = 0; i < pileGardiens.getGardiens().length - 1; i++) {
+            if (pileGardiens.getGardiens()[i] != null && !pileGardiens.getGardiens()[i].getNom().equals(nom)) {
                 compteur += pileGardiens.getGardiens()[i].getCompetence();
             }
-
         }
+
         if (compteur < 20){
+            System.out.println("On ne peut enlever le gardien " + nom + " parce que les points d'expérience < 20");
             return  null;
         }else {
             Gardien[] nouveau = new Gardien[pileGardiens.getGardiens().length];

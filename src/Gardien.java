@@ -2,7 +2,7 @@ public class Gardien {
     private String nom;
     private int competence;
     private int id = 999;
-    private int dernierId = 999;
+    private static int dernierId = 999;
 
     public Gardien(String nom, int competence){
         this.nom = nom;
@@ -12,8 +12,9 @@ public class Gardien {
 
 
 
-    public void entrainerAnimal(Animal animal, double temps) {
 
+    public void entrainerAnimal(Animal animal, double temps) {
+        temps = Math.round( temps * 10.0) / 10.0;
         if (temps < 10) {
             animal.setPoids(1);
         } else if (temps >= 10 && temps <= 30) {
@@ -21,6 +22,8 @@ public class Gardien {
         } else if (temps > 30) {
             animal.setPoids(5);
         }
+        this.competence++;
+        System.out.println("Le Gardien " + getNom() + " entraine l'animal Neptune " + temps + " min et augmente sa propre compétence");
     }
 
 

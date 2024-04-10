@@ -12,7 +12,8 @@ public class Veterinaire {
     public Classe getSpecialite() {return this.specialite;}
 
     public void soignerAnimal(Animal animal){
-    animal.calculerBesoinAlimentaire();
+        animal.calculerBesoinAlimentaire();
+        System.out.println("Le Vétérinaire " + getNom() + " a recalculé les besoins alimentaires de l'animal " + animal.getNom());
     }
 
     public String toString(){return "[" + getNom() + ", " + getSpecialite() + "]" ;}

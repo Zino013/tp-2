@@ -49,14 +49,22 @@ public class Enclos{
     public String getNom() {
         return nom;
     }
+    public String toString() {
+        if (getGardien() != null) {
 
-    public String toString(){
-        String resultat = "L'enclos " + getNom() + "est peuplé avec " + getNombreAnimaux() + " animaux. Sa capacité est de " + getCapaciteMax();
-        resultat += " animaux. Le vétérinaire assigné est " + getVeterinaire().toString() + ". Le gardien actuel est " + getGardien().toString() + ".\n" ;
+            String resultat = "L'enclos " + getNom() + " est peuplé avec " + getNombreAnimaux() + " animaux. Sa capacité est de " + getCapaciteMax();
+            resultat += " animaux. Le vétérinaire assigné est " + getVeterinaire().toString() + ". Le gardien actuel est " + getGardien().toString() + ".\n";
 
-        for (int i = 0; i < getAnimaux().length; i++) {
-            resultat += getAnimaux()[i].toString() + "\n";
-    }
-        return resultat;
+
+            resultat += "Les animaux dans cet enclos:\n";
+
+            for (int i = 0; i < getAnimaux().length; i++) {
+                if (getAnimaux()[i] != null) {
+                    resultat += getAnimaux()[i].toString() + "\n";
+                }
+            }
+            return resultat;
         }
+        return null;
+    }
 }

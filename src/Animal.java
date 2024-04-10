@@ -41,6 +41,7 @@ public class Animal {
                 break;
             default:
                 System.out.println("Pourcentage non valide");
+
         }
     }
 
@@ -65,6 +66,7 @@ public class Animal {
     }
 
     public double getBesoinAlimentaire() {
+        besoinAlimentaire = Math.round( besoinAlimentaire * 10.0) / 10.0;
         return besoinAlimentaire;
     }
 
